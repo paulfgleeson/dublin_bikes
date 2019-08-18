@@ -1,6 +1,6 @@
 
 # set your working directory to the necessary path, this is where the Excel file will be stored
-setwd("C:/Users/osull/OneDrive/Documents/Dublin_Bike_Task")
+setwd("C:/Users/osull/Dublin_Bike_Task")
 
 # load libraries needed to do the task
 library(httr) # Communication to the web

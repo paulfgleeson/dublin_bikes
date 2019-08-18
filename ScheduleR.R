@@ -6,8 +6,8 @@ library(taskscheduleR)
 # extdata is in the taskscheduleR package folder which is where I stored the script "Dublin_Bike_API_Call.R"
 myscript <- system.file("extdata", "Dublin_Bike_API_Call.R", package = "taskscheduleR")
 
-# creating a variable to define when to start our process
-runon <- format(Sys.time() + 62, "%H:%M")
+# creating a variable to define when to start our process - this starts the process in 2 minutes from now
+runon <- format(Sys.time() + 120, "%H:%M")
 
 # creating the task
 taskscheduler_create(taskname = "dublinbikecall", rscript = myscript, 
